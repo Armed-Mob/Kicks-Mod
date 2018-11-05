@@ -1,7 +1,7 @@
-package armedmob.mods.kicks.util.handlers;
+package armedmob.mods.kicks.handlers;
 
-import armedmob.mods.kicks.init.BlockInit;
-import armedmob.mods.kicks.init.ItemInit;
+import armedmob.mods.kicks.init.ModBlocks;
+import armedmob.mods.kicks.init.ModItems;
 import armedmob.mods.kicks.util.IHasModel;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
@@ -15,31 +15,25 @@ public class RegistryHandler {
 
 	@SubscribeEvent
 	public static void onItemRegister(RegistryEvent.Register<Item> event) {
-		
-		event.getRegistry().registerAll(ItemInit.ITEMS.toArray(new Item[0]));
+		event.getRegistry().registerAll(ModItems.ITEMS.toArray(new Item[0]));
 	}
 	
 	@SubscribeEvent
 	public static void onBlockRegister(RegistryEvent.Register<Block> event) {
-		
-		event.getRegistry().registerAll(BlockInit.BLOCKS.toArray(new Block[0]));
+		event.getRegistry().registerAll(ModBlocks.BLOCKS.toArray(new Block[0]));
 	}
 	
 	@SubscribeEvent
 	public static void onModelRegister(ModelRegistryEvent event) {
-	
-		for(Item item : ItemInit.ITEMS) {
-			
+		
+		for(Item item : ModItems.ITEMS) {
 			if(item instanceof IHasModel) {
-				
 				((IHasModel)item).registerModels();
 			}
 		}
 		
-		for(Block block : BlockInit.BLOCKS) {
-			
+		for(Block block : ModBlocks.BLOCKS) {
 			if(block instanceof IHasModel) {
-				
 				((IHasModel)block).registerModels();
 			}
 		}

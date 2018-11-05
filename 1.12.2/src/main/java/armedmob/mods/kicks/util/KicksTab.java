@@ -4,13 +4,13 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 
-public class KicksCreativeTab extends CreativeTabs {
+public class KicksTab extends CreativeTabs {
 
-	public KicksCreativeTab() {
+	public KicksTab() {
 		super(Reference.MODID);
 	}
 	
-	@Override 
+	@Override
 	public ItemStack getTabIconItem() {
 		return new ItemStack(Items.DIAMOND_BOOTS);
 	}
