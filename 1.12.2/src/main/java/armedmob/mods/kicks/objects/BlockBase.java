@@ -12,12 +12,14 @@ import net.minecraft.item.ItemBlock;
 
 public class BlockBase extends Block implements IHasModel {
 
-	public BlockBase(String name, Material material) {
+	public BlockBase(String name, Material material, String tool, int harvestLevel, float hardness, float resistance) {
 		super(material);
 		
 		setUnlocalizedName(name);
 		setRegistryName(name);
 		setCreativeTab(Reference.KICKSTAB);
+		setHarvestLevel(tool, harvestLevel);
+		setResistance(resistance);
 		
 		ModBlocks.BLOCKS.add(this);
 		ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

@@ -1,0 +1,26 @@
+// Creative Tabs
+itemGroup.kicks=Kicks
+
+// Ingots
+item.ingot_aluminum.name=Aluminum Ingot
+item.ingot_copper.name=Copper Ingot
+item.ingot_lead.name=Lead Ingot
+item.ingot_nickel.name=Nickel Ingot
+
+// Nuggets
+item.nugget_aluminum.name=Aluminum Nugget
+item.nugget_copper.name=Copper Nugget
+item.nugget_lead.name=Lead Nugget
+item.nugget_nickel.name=Nickel Nugget
+
+// Ores
+tile.ore_aluminum.name=Aluminum Ore
+tile.ore_copper.name=Copper Ore
+tile.ore_lead.name=Lead Ore
+tile.ore_nickel.name=Nickel Ore
+
+// Blocks
+tile.block_aluminum.name=Aluminum Block
+tile.block_copper.name=Copper Block
+tile.block_lead.name=Lead Block
+tile.block_nickel.name=Nickel Block
